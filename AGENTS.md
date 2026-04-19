@@ -40,16 +40,18 @@ Instructions for AI coding agents working in this repo.
 **does_not_do:** JPEG/JPEG-2000/RLE decoding, colour space conversion, multi-frame playback.
 
 ## Environment Variables
-| Var | Default | Consumer |
-|-----|---------|----------|
-| `BACKEND_PORT` | `3000` | `backend/src/config.ts` |
-| `ORTHANC_BASE_URL` | `http://localhost:8042` | backend |
-| `ORTHANC_DICOMWEB_ROOT` | `/dicom-web` | backend |
-| `CORS_ORIGINS` | `http://localhost:5173` | backend (comma-separated, `*` allowed) |
-| `FHIR_STORE_PATH` | `./data/fhir.db` | backend |
-| `FRONTEND_PORT` | `5173` | `frontend/vite.config.ts` |
-| `ORTHANC_HTTP_PORT` / `ORTHANC_DICOM_PORT` | `8042` / `4242` | `docker-compose.yml` |
-| `VITE_BACKEND_URL` | `http://localhost:3000` | `frontend/src/lib/env.ts` |
+
+```dotenv
+BACKEND_PORT=3000                          # backend/src/config.ts
+ORTHANC_BASE_URL=http://localhost:8042     # backend
+ORTHANC_DICOMWEB_ROOT=/dicom-web           # backend
+CORS_ORIGINS=http://localhost:5173         # backend — comma-separated, * allowed
+FHIR_STORE_PATH=./data/fhir.db             # backend
+FRONTEND_PORT=5173                         # frontend/vite.config.ts
+ORTHANC_HTTP_PORT=8042                     # docker-compose.yml
+ORTHANC_DICOM_PORT=4242                    # docker-compose.yml
+VITE_BACKEND_URL=http://localhost:3000     # frontend/src/lib/env.ts
+```
 
 ## Patterns
 - Interface-first services (`FhirStore`, `FetchLike`) so tests substitute in-memory / `vi.fn()` implementations
