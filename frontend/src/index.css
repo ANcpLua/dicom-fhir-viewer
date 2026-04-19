@@ -4,9 +4,9 @@
   --color-ink-50: #f5f7fb;
   --color-ink-100: #e6eaf4;
   --color-ink-200: #c9d1e3;
-  --color-ink-300: #9aa4bd;
-  --color-ink-400: #6b7490;
-  --color-ink-500: #464d64;
+  --color-ink-300: #c7cfe0;
+  --color-ink-400: #a1aac4;
+  --color-ink-500: #7a839d;
   --color-ink-600: #2a2f42;
   --color-ink-700: #1a1d2b;
   --color-ink-800: #11131d;
@@ -209,7 +209,7 @@ body::after {
     font-family: var(--font-mono);
     text-transform: uppercase;
     letter-spacing: 0.16em;
-    color: rgb(107 116 144);
+    color: var(--color-ink-400);
   }
 }
 
