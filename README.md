@@ -74,4 +74,4 @@ cd frontend && npm test
 
 ## License
 
-MIT
+[MIT](LICENSE) © Alexander Nachtmann
