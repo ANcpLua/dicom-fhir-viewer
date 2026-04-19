@@ -1,6 +1,6 @@
-# CLAUDE.md
+# AGENTS.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+Instructions for AI coding agents working in this repo.
 
 **Scope:** Browser-first viewer that uploads DICOM to Orthanc PACS, projects studies into FHIR R4, and renders images + resources from a Hono backend and a React frontend.
 
