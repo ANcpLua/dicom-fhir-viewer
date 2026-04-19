@@ -44,7 +44,7 @@ cd frontend && npm i && npm run dev &
 
 Open **http://localhost:5173** and drop a `.dcm` file onto the upload zone.
 
-A public test file ships in `sample-data/CT_small.dcm`.
+Public test files ship in `sample-data/`: `CT_small.dcm` (GDCM) and `MR_small.dcm` (pydicom, MIT).
 
 ## Screenshots
 

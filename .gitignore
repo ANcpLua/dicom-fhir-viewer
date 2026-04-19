@@ -8,10 +8,12 @@ coverage/
 
 sample-data/*.dcm
 sample-data/*.zip
-# CT_small.dcm is a public NEMA WG-04 fixture (~39 kB) used by the
-# frontend dicom-pixels + ImageViewer tests; track it so CI can run
+# CT_small.dcm (NEMA WG-04) and MR_small.dcm (pydicom, MIT) are public
+# fixtures (~50 kB combined) used by the frontend dicom-pixels +
+# ImageViewer tests and the docs screenshots; track them so CI can run
 # the full suite without a separate download step.
 !sample-data/CT_small.dcm
+!sample-data/MR_small.dcm
 
 backend/data/
 backend/data/*.db
