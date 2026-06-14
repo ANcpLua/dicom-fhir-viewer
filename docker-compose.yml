@@ -1,6 +1,6 @@
 services:
   orthanc:
-    image: orthancteam/orthanc:25.2.0
+    image: orthancteam/orthanc:25.2.0@sha256:fc52a4a369a4fc182edc0db8038ab3c19c5ceef7c92a25947f98101ad61a82a6
     container_name: dicom-fhir-viewer-orthanc
     restart: unless-stopped
     ports:
